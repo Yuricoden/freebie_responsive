@@ -1,0 +1,21 @@
+mixin menu()
+	+b('nav').menu&attributes(attributes)
+		li
+			+e.link(href="#") Home
+		li
+			+e.link(href="#") Service
+		li
+			+e.link(href="#") Collections
+		li
+			+e.link(href="#") Products
+		li
+			+e.link(href="#") About
+		li
+			+e.link(href="#") Blog
+		li
+			+e('a').user-icon(href='#')
+		li
+			+e('a').user-buy(href='#')
+		li
+			+e('a').user-search(href='#')
+

@@ -2,10 +2,17 @@ include /../node_modules/bemto.jade/bemto
 include /../node_modules/jade-injected/jade-injected
 include ../page/page
 include ../scripts/scripts
+include ../container/container
+include ../half_container/half_container
+include ../home_section/home_section
 
 doctype html
 html(lang='ru')
-	include ../head/head
-	+page
-		block content
-		+scripts(['app.min.js'])
+		include ../head/head
+		+page
+				block content
+				+container()
+						+half_container()
+								+home_section()
+
+				+scripts(['app.min.js'])
