@@ -1,6 +1,6 @@
 # CSSSR Project Template
 *Верстка небольшого лендинга**
-https://dribbble.com/shots/1671156-ICNDY-eCommerce-Clothing-Site-Freebie
+![alt text](keren.jpg)
 
 
 ## Старт проекта
