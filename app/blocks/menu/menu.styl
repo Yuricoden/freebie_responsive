@@ -1,10 +1,64 @@
 .menu
 	display flex
-	flex 0 1
+	flex 1.9 1
+	flex-wrap wrap
+	justify-content center
+	align-items center
 	& li
 		list-style-type none
-.menu__link
-		padding 15px
-		text-decoration none
-		text-transform uppercase
-		font-size 15px
+		position relative
+		
+a.menu__link
+	margin  15px
+	text-decoration none
+	text-transform uppercase
+	font-size 15px
+
+.menu__link:after
+	display block
+	position absolute
+	content ""
+	height 2px
+	width 0
+	background-color #4933f1
+	transition width .5s ease-in-out, left  .5s ease-in-out
+	top 20px
+	border 1px
+
+.menu__link:before
+	display block
+	position absolute
+	content ""
+	height 2px
+	width 0%
+	background-color #4933f1
+	transition width .5s ease-in-out, right .5s ease-in-out
+	bottom 20px
+	border 1px
+
+.menu__link:hover::before
+	width 100%
+	right 0
+
+.menu__link:hover::after
+	   width: 100%
+	   left 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
