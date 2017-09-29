@@ -1,3 +1,40 @@
+include ../service-desctiption/service-desctiption
+include ../service-img/service-img
+include ../featured-container/featured-container
+include ../gallery-guitar/gallery-guitar
+include ../popular-products/popular-products
+include ../products-item/products-item
+
 mixin second-container()
 	+b.second-container&attributes(attributes)
-		block
+		+e('h3').name-section
+			| Service
+		+e.service-container
+			+service-desctiption()
+			+service-img()
+		+featured-container()
+			+e('h3').name-section
+				| Featured Collections
+			+e.gallery
+				each item in [{name}, {name}]
+					+gallery-guitar( item )
+		+b.popular-products()
+			+e('h3').name-section
+				|Popular Products
+			+e.products-item
+				+products-item('first-guitar','two-guitar','three-guitar','four-guitar')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
