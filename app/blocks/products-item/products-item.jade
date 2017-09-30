@@ -1,7 +1,17 @@
-
 mixin products-item(...items)
-	each item in items
-		div(class='product-item_' +item)
+	.product(class="product_#{attributes.class}")
+		each item in items
+			img.products-item__img(src= "./" + item.img)
+			.product-item__name=item.name
+			.product-item__price=item.price
+
+
+
+
+
+
+
+
 
 
 

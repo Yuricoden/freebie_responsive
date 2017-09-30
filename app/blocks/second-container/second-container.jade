@@ -4,6 +4,10 @@ include ../featured-container/featured-container
 include ../gallery-guitar/gallery-guitar
 include ../popular-products/popular-products
 include ../products-item/products-item
+mixin content-products(src, name, price)
+	img(src= src)
+	div.name= name
+	div.price= price
 
 mixin second-container()
 	+b.second-container&attributes(attributes)
@@ -22,7 +26,13 @@ mixin second-container()
 			+e('h3').name-section
 				|Popular Products
 			+e.products-item
-				+products-item('first-guitar','two-guitar','three-guitar','four-guitar')
+				+products-item({img:'../assets/img_gallery_first.png', name: 'Electric Guitar', price: '$450'})(class="first_guitar")
+				+products-item({img:'../assets/img_gallery_two.png',name: 'Twelve-String Guitar', price: '$350'})(class="two_guitar")
+				+products-item({img:'../assets/img_gallery_three.png',name: 'Nylon Guitar', price: '$150'})(class="three_guitar")
+				+products-item({img:'../assets/img_gallery_four.png',name: 'Acoustic Guitar', price: '$250'})(class="four_guitar")
+
+
+
 
 
 

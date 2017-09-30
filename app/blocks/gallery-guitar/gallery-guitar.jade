@@ -1,12 +1,12 @@
-mixin dataname( data )
-	+e.dataname= data.row
+mixin dataname( ...data )
+	each item in data
+		div= item
 
 
 
 mixin gallery-guitar(data)
 	+b.gallery-guitar&attributes(attributes)
 		+e.guitar-item= data.name
-			+dataname({row:'adasd'})
 		+e.guitar-item= data.name
 
 
