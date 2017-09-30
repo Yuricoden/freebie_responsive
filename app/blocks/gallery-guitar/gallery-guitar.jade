@@ -1,13 +1,16 @@
-mixin dataname( ...data )
-	each item in data
-		div= item
+mixin link(url)
+	+b('a').view__button(href=url)
+		block
 
-
-
-mixin gallery-guitar(data)
+mixin gallery-guitar(...items)
 	+b.gallery-guitar&attributes(attributes)
-		+e.guitar-item= data.name
-		+e.guitar-item= data.name
+		each item in items
+				+e.guitar-item
+					+b.item_guitar= item.name
+					+link('#') View Content
+
+
+
 
 
 

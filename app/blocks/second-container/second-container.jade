@@ -20,8 +20,8 @@ mixin second-container()
 			+e('h3').name-section
 				| Featured Collections
 			+e.gallery
-				each item in [{name}, {name}]
-					+gallery-guitar( item )
+					+gallery-guitar({name:'Acoustic Guitar'},{name:'Nylon Guitar'})
+					+gallery-guitar({name:'Electric Guitar'},{name:'Twelve-String Guitar'})
 		+b.popular-products()
 			+e('h3').name-section
 				|Popular Products
