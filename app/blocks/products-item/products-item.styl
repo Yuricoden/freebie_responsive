@@ -6,24 +6,46 @@
 		-moz-box-shadow: 15px 11px 80px 23px rgba(224,224,224,1);
 		box-shadow: 15px 11px 80px 23px rgba(224,224,224,1);
 		transition 0.35s
+		padding 2%
+		
 .products-item__img
 	max-width 100%
+	min-width 90%
 	height auto
+	
+
 .guitar_img_container
 	width 200px
-	height 305px
 
 .product-item
 	&__name
 		font-family Butler
 		color #212121
-		font-size 1.375rem
+		font-size 1.275rem
 		font-weight 700
 		line-height 2.5
+		
 	&__price
 		font-family Butler
 		color #212121
 		font-size 1.375rem
 		font-weight 500
-		line-height 2.5
+
+.product
+	display flex
+	&_content
+		flex 2.1 1
+		display flex
+		flex-direction column
+		justify-content center
+		padding-left 4%
+.guitar_img_container
+	flex 1.8 1
+
+.product
+	&:hover
+		.product_content
+			.product-item__name
+				font-size 1.1rem
+	
 	 

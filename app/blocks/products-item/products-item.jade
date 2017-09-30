@@ -1,10 +1,11 @@
 mixin products-item(...items)
 	.product(class="product_#{attributes.class}")
 		each item in items
+			.product_content
+				.product-item__name=item.name
+				.product-item__price=item.price
 			.guitar_img_container
 				img.products-item__img(src= "./" + item.img)
-			.product-item__name=item.name
-			.product-item__price=item.price
 
 
 
