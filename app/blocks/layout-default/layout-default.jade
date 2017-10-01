@@ -6,6 +6,7 @@ include ../container/container
 include ../half_container/half_container
 include ../home_section/home_section
 include ../second-container/second-container
+include ../video-container/video-container
 
 doctype html
 html(lang='ru')
@@ -16,5 +17,7 @@ html(lang='ru')
 						+half_container()
 								+home_section()
 						+second-container()
+						+video-container()
+
 
 				+scripts(['app.min.js'])

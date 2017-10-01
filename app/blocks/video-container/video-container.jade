@@ -1,0 +1,6 @@
+mixin video-container()
+	+b.video-container&attributes(attributes)
+		+e.conta-vid
+				video.control_sor( id='youtubevideo'  height='500px' preload="none"  controls='controls' poster='./../assets/poster.png')
+					source(type='video/youtube' src='https://www.youtube.com/embed/eJFfnTkyj-g?ecver=1')
+
