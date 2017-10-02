@@ -9,6 +9,8 @@ include ../second-container/second-container
 include ../video-container/video-container
 include ../about-container/about-container
 include ../blog-container/blog-container
+include ../footer/footer
+
 doctype html
 html(lang='ru')
 		include ../head/head
@@ -21,6 +23,7 @@ html(lang='ru')
 						+video-container()
 						+about-container()
 						+blog-container()
+						+footer()
 
 
 				+scripts(['app.min.js'])

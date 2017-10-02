@@ -1,0 +1,16 @@
+include ../menu-footer/menu-footer
+include  ../newsletter-email/newsletter-email
+
+mixin footer()
+	+b.footer&attributes(attributes)
+		+e.content
+			+logo()
+			+menu-footer(
+				{itemclass:'search',refs:'#', name:'Search'},
+				{itemclass:'contact',refs:'contact.html', name: 'Contact'},
+				{itemclass:'about',refs:'about.html', name: 'About'},
+				{itemclass:'shipping',refs: 'delivery.html', name:'Shipping'},
+				{itemclass:'terms',refs: 'terms.html', name: 'Terms and Conditions'}
+			)
+
+
