@@ -1,0 +1,13 @@
+mixin blog-item(...items)
+	+e.blog-item&attributes(attributes)
+		each item in items
+				+e.block-content
+					.name-post= item.name
+					.name-heading= item.headpost
+					p.content-post= item.postcontent
+					+b.data-post
+						+e.time-post= item.timepost
+						+e.comment-post= item.comments
+					a.button-post= item.button
+
+

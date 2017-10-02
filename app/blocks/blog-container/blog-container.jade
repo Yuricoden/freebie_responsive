@@ -1,3 +1,33 @@
+include ../blog-items/blog-items
+include ../blog-item/blog-item
+
 mixin blog-container()
 	+b.blog-container&attributes(attributes)
+		+e('h3').blog-name Blog
+		+e.blog-items()
+			+blog-item({
+			    	name: 'Love',
+					headpost: 'The single saga of gibson`s',
+                	postcontent: 'LoremRemember: boiled watermelon tastes best ' +
+                	'when grilled in a soup pot tossed with szechuan pepper. LoremCompetition de fatalis burgus, reperire hibrida!' +
+					'LoremEverything we do is connected with density: energy, conclusion, samadhi, peace.',
+					timepost:'23minutes',
+					comments: '19',
+					button: 'read more'
+			})
+
+			+blog-item({
+                name: 'Life',
+                headpost: 'The single saga of gibson`s',
+                postcontent: 'LoremRemember: boiled watermelon tastes best ' +
+                'when grilled in a soup pot tossed with szechuan pepper. LoremUbi est noster bromium?LoremA falsis, rumor castus vortex.' +
+				'LoremAfterlife doesn’t agreeable desire any guru — but the power is what occurs.',
+                comments: '125',
+                button: 'read more'
+            })
+
+
+
+
+
 
