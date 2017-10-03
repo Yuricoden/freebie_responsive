@@ -4,13 +4,31 @@ include  ../newsletter-email/newsletter-email
 mixin footer()
 	+b.footer&attributes(attributes)
 		+e.content
-			+logo()
-			+menu-footer(
-				{itemclass:'search',refs:'#', name:'Search'},
-				{itemclass:'contact',refs:'contact.html', name: 'Contact'},
-				{itemclass:'about',refs:'about.html', name: 'About'},
-				{itemclass:'shipping',refs: 'delivery.html', name:'Shipping'},
-				{itemclass:'terms',refs: 'terms.html', name: 'Terms and Conditions'}
-			)
+			.container-logo
+				+e.logo
+					img(src='./img/logo.png')
+			+e.container-menu
+					+menu-footer(
+						{itemclass:'search',refs:'#', name:'Search'},
+						{itemclass:'contact',refs:'contact.html', name: 'Contact'},
+						{itemclass:'about',refs:'about.html', name: 'About'},
+						{itemclass:'shipping',refs: 'delivery.html', name:'Shipping'},
+						{itemclass:'terms',refs: 'terms.html', name: 'Terms and Conditions'}
+						)
+					+e.social-contacts
+						+e.contacts
+							+e('h4').heading-contacts Get in touch
+							+e('p').email-contacts customers@musica.com
+						+e.social-icon
+							+e('h4').heading-social Social
+
+					+newsletter-email()
+
+
+
+
+
+
+
 
 

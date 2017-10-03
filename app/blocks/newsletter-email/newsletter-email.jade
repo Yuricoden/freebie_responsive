@@ -1,3 +1,7 @@
 mixin newsletter-email()
 	+b.newsletter-email&attributes(attributes)
-		block
+		+e.mails
+			+e('h4').heading-input Newsletter
+			+e.component-input
+				+e('input')(type='email' placeholder='your Email')
+		+e('p').reserved 2017.All right reserved

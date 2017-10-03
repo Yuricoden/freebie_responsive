@@ -1,9 +1,11 @@
 mixin menu-footer(...items)
 	+b.menu-footer&attributes(attributes)
+			+e('h4').heading-menu Quick Links
 			+e('ul').menu
 				each item in items
 					+e('li')(class='item-' + item.itemclass)
 						a.menu-item(href=item.refs)=item.name
+
 
 
 
