@@ -26,8 +26,10 @@ mixin footer()
 									for icon in icons
 											a#social(class='social-icons_'+ icon.social)(href= icon.link)
 
-
 					+newsletter-email()
+					.box_img-arrow
+							+e('a').arrow-up
+							img(src='./../assets/guitar_arrow.png')
 
 
 
