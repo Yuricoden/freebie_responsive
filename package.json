@@ -71,6 +71,8 @@
     "eslint": "^2.12.0",
     "eslint-loader": "^1.1.1",
     "expose-loader": "^0.7.1",
+    "font-awesome": "^4.7.0",
+    "font-awesome-stylus": "^4.7.1",
     "gulp": "^3.9.0",
     "gulp-bump": "^1.0.0",
     "gulp-cached": "^1.1.0",

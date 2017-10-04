@@ -2,6 +2,12 @@ mixin newsletter-email()
 	+b.newsletter-email&attributes(attributes)
 		+e.mails
 			+e('h4').heading-input Newsletter
-			+e.component-input
-				+e('input')(type='email' placeholder='your Email')
+			form(action='#').newsletter
+				.form-item
+					input(type='text' placeholder='Search').news-input
+				.form-item
+					button(type='submit').submit-news
+						i.fa.fa-search
+
+
 		+e('p').reserved 2017.All right reserved
