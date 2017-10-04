@@ -48,8 +48,55 @@ a.menu__link
 	   width: 100%
 	   left 0
 
-
-
+.menu
+	&__user-icon
+		fa(user-o)
+		font-size 0.6rem
+		color:  #212121
+		position relative
+		bottom 2px
+	&__user-buy
+		fa(shopping-cart)
+		font-size 1rem
+		color:  #212121;
+		margin: 10px
+		text-decoration none
+	&__user-search
+		fa(search)
+		font-size 1rem
+		color:  #212121
+		margin: 10px
+		text-decoration none
+	&__dropdown
+		fa(angle-down)
+		font-size 0.6rem
+		cursor pointer
+		position relative
+		bottom 2px
+	&__user-plus
+		fa(user-plus)
+		cursor pointer
+		font-size 0.6rem
+		opacity 0
+	
+	
+.menu li:nth-child(7)
+	border-radius: 2px;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+	opacity: 0.6;
+	width: 31px
+	height: 15px;
+	padding-left 4px
+	box-sizing: border-box;
+	&:hover
+		height: 35px
+		
+.menu li:nth-child(7):hover
+	.menu__user-plus
+		opacity 1
+	
 
 
 

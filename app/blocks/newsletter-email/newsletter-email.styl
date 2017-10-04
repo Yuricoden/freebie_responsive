@@ -22,15 +22,38 @@
 	margin-top: 10%
 
 .news-input
-	height 30px
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	border-width: 1px;
+	border-color:  #000000;
+	border-style: solid;
+	width: 203px;
+	height: 38px
 	box-sizing border-box
 	
 .submit-news
-	width: 30px;
-	height: 30px;
-	background: #c00
+	border-bottom-right-radius: 3px
+	border-top-right-radius: 3px
+	background-color:  #4933f2
+	box-shadow: 0px 0px 24.65px 4.35px rgba(73, 51, 242, 0.23)
+	width: 39px
+	height: 38px
 	border: none
 	outline: none
 	position: relative
 	cursor: pointer
 	color: #fff
+	fa(caret-right)
+	font-size 2rem
+	
+.form-item
+		input
+			padding-left 4%
+			+placeholder()
+				font-family Butler
+				color #212121
+				font-size 1.2rem
+				font-weight 400
+				line-height 1.625
+			
+			

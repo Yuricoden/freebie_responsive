@@ -21,6 +21,11 @@ mixin footer()
 							+e('p').email-contacts customers@musica.com
 						+e.social-icon
 							+e('h4').heading-social Social
+							.icons_fonts
+									-var icons = [{social:'facebook',link: 'http://facebook.com'}, {social:'twitter',link: 'http://twitter.com'}, {social:'instagram',link: 'http://instagram.com'}, {social:'google',link: 'http://google.com'}]
+									for icon in icons
+											a#social(class='social-icons_'+ icon.social)(href= icon.link)
+
 
 					+newsletter-email()
 
