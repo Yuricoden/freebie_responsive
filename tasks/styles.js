@@ -10,7 +10,7 @@ import nano from 'gulp-cssnano';
 import rename from 'gulp-rename';
 import sourcemaps from 'gulp-sourcemaps';
 import errorHandler from 'gulp-plumber-error-handler';
-var fontAwesome = require('font-awesome-stylus');
+import fontAwesome from 'font-awesome-stylus';
 
 const isDebug = process.env.NODE_ENV !== 'production';
 
