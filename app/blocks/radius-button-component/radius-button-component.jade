@@ -1,23 +1,18 @@
 mixin radius-button-component()
 	+b('ul').radius-button-component&attributes(attributes)
 		+e('li').radio
-			label.control.control--radio
-				input(type='radio' name='radio' checked)
+			label.control.control--radio.control-slide1(for='slide1')
 				.control__indicator
 		+e('li').radio
-			label.control.control--radio
-				input(type='radio' name='radio' checked)
+			label.control.control--radio.control-slide2(for='slide2')
 				.control__indicator
 		+e('li').radio
-			label.control.control--radio
-				input(type='radio' name='radio' checked)
+			label.control.control--radio.control-slide3(for='slide3')
 				.control__indicator
 		+e('li').radio
-			label.control.control--radio
-				input(type='radio' name='radio' checked)
+			label.control.control--radio.control-slide4(for='slide4')
 				.control__indicator
 		+e('li').radio
-			label.control.control--radio
-				input(type='radio' name='radio')
+			label.control.control--radio.control-slide5(for='slide5')
 				.control__indicator
 

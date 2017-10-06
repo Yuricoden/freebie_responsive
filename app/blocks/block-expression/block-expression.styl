@@ -27,4 +27,58 @@
 		color #fff
 		cursor pointer
 
+.block-expression
+	&__slide-text,&__slide-two,&__slide-three,&__slide-four,&__slide-five
+		float left
+		width 20%
+		opacity 1
+		-webkit-transition opacity 0.6s ease-out
+		transition opacity 0.6s ease-out
+		
+.slide
+	width 775px
 
+#overflow-inner
+	width 500%
+
+#overflow-inner:after {
+	display block
+	height 0
+	clear both
+	content ''
+}
+	
+.overflow
+	overflow hidden
+#slide1
+	&:checked
+		& ~ .block-expression
+				.overflow
+					#overflow-inner
+						margin-left 0
+					
+#slide2
+	&:checked
+		& ~ .block-expression
+			.overflow
+				#overflow-inner
+					margin-left -100%
+#slide3
+	&:checked
+		& ~ .block-expression
+			.overflow
+				#overflow-inner
+					margin-left -200%
+					
+#slide4
+	&:checked
+		& ~ .block-expression
+			.overflow
+				#overflow-inner
+					margin-left -300%
+#slide5
+	&:checked
+		& ~ .block-expression
+			.overflow
+				#overflow-inner
+					margin-left -400%

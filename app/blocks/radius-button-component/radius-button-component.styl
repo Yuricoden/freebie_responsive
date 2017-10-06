@@ -33,13 +33,12 @@
 	margin-bottom 15px
 	cursor pointer
 	font-size 18px
-// Hide default browser input
-//	input
-//		position absolute
-//		z-index -1
-//		opacity 0
 
-// Custom control
+input[name='radiost']
+		position absolute
+		z-index -1
+		opacity 0
+
 .control__indicator
 	position absolute
 	top 0px
@@ -54,12 +53,13 @@
 		content ''
 		position absolute
 		display none
-		.control input:checked ~ &
-			display block
-			width 22px
-			height 22px
-			border-radius 10px
-			background #4933f1
-	
-
-
+		
+for val in 1..5
+	.guitar-slider input[name='radiost']:nth-of-type({val}):checked ~ .radius-button-component .control-slide{val}
+		.control__indicator
+			&:after
+				display block
+				width 22px
+				height 22px
+				border-radius 10px
+				background #4933f1

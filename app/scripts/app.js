@@ -15,4 +15,22 @@ $('#youtubevideo').mediaelementplayer({
     flashName: 'flashmediaelement.swf'
 });
 
+var btnBottom = $('.home__arrow');
+var btnTop = $('.footer__arrow-up');
+
+$(document).ready(function() {
+    btnBottom.on('click', (function() {
+    $('html,body').animate({ scrollTop: $(document).height() }, 'slow');
+    return false
+    }));
+
+    btnTop.on('click', (function() {
+    $('html,body').animate({ scrollTop: 400}, 'slow');
+    return false
+    }));
+
+});
+
+
+
 

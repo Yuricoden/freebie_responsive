@@ -3,6 +3,11 @@ include ../radius-button-component/radius-button-component
 
 mixin guitar-slider()
 	+b.guitar-slider&attributes(attributes)
+		input(type='radio' name='radiost' id='slide1' checked)
+		input(type='radio' name='radiost' id='slide2')
+		input(type='radio' name='radiost' id='slide3')
+		input(type='radio' name='radiost' id='slide4')
+		input(type='radio' name='radiost' id='slide5')
 		+block-expression()
 		+radius-button-component()
 	+e.arrows-block
