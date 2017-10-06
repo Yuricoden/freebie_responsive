@@ -31,6 +31,16 @@ $(document).ready(function() {
 
 });
 
+/* Animating hearts */
+$(".items__item-like").on('click touchstart', function(){
+    $(this).toggleClass('animating');
+});
+
+
+$(".items__item-like").on('animationend', function(){
+    $(this).toggleClass('animating');
+});
+
 
 
 

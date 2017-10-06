@@ -2,8 +2,14 @@ mixin products-item(...items)
 	.product(class="product_#{attributes.class}")
 		each item in items
 			.product_content
-				.product-item__name=item.name
-				.product-item__price=item.price
+				.product_items
+					.product-item__name=item.name
+					.product-item__price=item.price
+				.product-item_icons
+					+b.items_icons
+						+e.item-like
+						+e.item-buy
+							img(src='./../assets/shopping-cart.png')
 			.guitar_img_container
 				img.products-item__img(src= "./" + item.img)
 

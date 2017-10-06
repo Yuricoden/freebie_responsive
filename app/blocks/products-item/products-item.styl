@@ -38,8 +38,7 @@
 		flex 2.1 1
 		display flex
 		flex-direction column
-		justify-content center
-		padding-left 4%
+		padding-left 10%
 .guitar_img_container
 	flex 1.8 1
 
@@ -62,8 +61,71 @@
 		overflow hidden
 	
 
+.product_items
+	flex: 1.5 1
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
 	
 	
 	
+.product-item_icons
+	display: flex
+	flex: 1 1
+	align-items: center
 	
-	 
+.items_icons
+	display flex
+	border-radius 3px
+	border-width: 1px;
+	border-color #000000
+	border-style solid
+	opacity 0.6
+	width 110px
+	height 31px
+	justify-content space-around
+	align-items center
+	
+.items
+	&__item-buy
+		cursor pointer
+		width 40px
+	&__item-like
+		display flex
+		cursor: pointer;
+		background-image:url(  'https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+		background-position: left;
+		background-repeat:no-repeat;
+		background-size:2900%;
+		width 52px
+	&__item-like
+		& img
+			cursor pointer
+			align-self center
+		&:after
+			border-right 1px solid #000
+			content ''
+			display: inline-block
+			width: 60px
+			height 30px
+		&:hover
+			background-position:right
+	
+
+	
+
+	
+	
+.animating
+		animation: heart-burst .8s steps(28) 1
+	
+	
+@keyframes heart-burst
+	from
+		background-position:left
+	to
+		background-position:right
+
+		
+		
+				
