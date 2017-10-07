@@ -19,6 +19,10 @@
 		background-image url('../blog_img_1.png')
 	&__blog-item:nth-child(2)
 		background-image url('../blog_img_2.png')
+	&__blog-item:nth-child(4)
+		background-image url('../blog_img_1.png')
+	&__blog-item:nth-child(3)
+		background-image url('../blog_img_2.png')
 	&__blog-item
 		background-repeat no-repeat
 		background-size cover
@@ -26,7 +30,7 @@
 		min-height 540px
 		margin 0.2%
 		display flex
-		flex 1 1
+		flex 1 1 49%
 		border-radius 2%
 		align-items center
 	&__button-show
@@ -45,3 +49,6 @@
 		cursor pointer
 		
 		
+.overflow_blog-item
+	overflow hidden
+	height 545px

@@ -1,17 +1,17 @@
 mixin menu()
 	+b('nav').menu&attributes(attributes)
-		li
-			+e.link(href="#") Home
-		li
-			+e.link(href="#") Service
-		li
-			+e.link(href="#") Collections
-		li
-			+e.link(href="#") Products
-		li
-			+e.link(href="#") About
-		li
-			+e.link(href="#") Blog
+		li(data-menuachor='home')
+			+e.link(href="#home") Home
+		li(data-menuachor='service' )
+			+e.link(href="#service") Service
+		li(data-menuachor='collect' )
+			+e.link(href="#collect") Collections
+		li(data-menuachor='product')
+			+e.link(href="#product") Products
+		li(data-menuachor='about')
+			+e.link(href="#about") About
+		li(data-menuachor='blog')
+			+e.link(href="#blog") Blog
 		li
 			+e('a').user-icon(href='#')
 			+e('a').dropdown

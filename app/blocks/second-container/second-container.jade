@@ -13,16 +13,16 @@ mixin second-container()
 	+b.second-container&attributes(attributes)
 		+e('h3').name-section
 			| Service
-		+e.service-container
+		+e.service-container#service
 			+service-desctiption()
 			+service-img()
-		+featured-container()
+		+featured-container()#collect
 			+e('h3').name-section
 				| Featured Collections
 			+e.gallery
 					+gallery-guitar({name:'Acoustic Guitar'},{name:'Nylon Guitar'})
 					+gallery-guitar({name:'Electric Guitar'},{name:'Twelve-String Guitar'})
-		+b.popular-products()
+		+b.popular-products()#product
 			+e('h3').name-section
 				|Popular Products
 			+e.products-item

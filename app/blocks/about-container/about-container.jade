@@ -2,7 +2,7 @@ include ../about-description/about-description
 include ../about-img/about-img
 
 mixin about-container()
-	+b.about-container&attributes(attributes)
+	+b.about-container&attributes(attributes)#about
 		+e('h3').name-section  About Us
 		+e.about-history
 			+about-description()

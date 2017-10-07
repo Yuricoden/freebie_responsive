@@ -6,7 +6,9 @@ mixin blog-item(...items)
 					.name-heading= item.headpost
 					p.content-post= item.postcontent
 					+b.data-post
+						+e('img').img_time(src='./../assets/comment.png')
 						+e.time-post= item.timepost
+						+e('img').img_time(src='./../assets/clock.png')
 						+e.comment-post= item.comments
 					a.button-post= item.button
 
