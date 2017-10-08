@@ -1,6 +1,7 @@
 .block-expression
 	margin-left auto
 	margin-right auto
+	min-width: 320px
 	&__slug-tune
 		font-family Butler
 		color: #212121
@@ -82,3 +83,7 @@
 			.overflow
 				#overflow-inner
 					margin-left -400%
+@media  screen and (max-width: 480px)
+	.block-expression__slug-tune
+		font-size: 13.5vw
+		width: 100%

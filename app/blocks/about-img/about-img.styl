@@ -1,2 +1,19 @@
 .about-img
 	display block
+	flex: 1 1 50%
+	
+.about-img
+	& img
+		max-width 100%
+		min-width 100%
+		height auto
+@media screen and (max-width: 1180px)
+	.about-img
+		flex 1 1 100%
+	.about-description
+		& p
+			text-align center
+		& h4
+			text-align center
+		
+	
