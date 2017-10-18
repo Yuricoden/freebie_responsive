@@ -1,5 +1,6 @@
 # CSSSR Project Template
 *Верстка небольшого лендинга**
+1.Верстка desktop tablet mobile 2.Якоря переходы.3.Анимации.4.Слайдер.5.Подгрузка video.
 ![alt text](keren.jpg)
 
 
